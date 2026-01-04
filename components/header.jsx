@@ -59,7 +59,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="sticky top-0 w-full z-50 shadow-xl"
+      className="fixed top-0 left-0 w-full z-50 shadow-xl"
       style={{ backgroundColor: COLORS.navy }}
     >
       <div className="max-w-7xl mx-auto px-6">
@@ -140,9 +140,7 @@ const Navbar = () => {
             <Link
               href="/results-portal"
               className="px-4 py-2 rounded-lg text-sm font-semibold text-[#0A1931]"
-              style={{
-                backgroundColor: COLORS.cream,
-              }}
+              style={{ backgroundColor: COLORS.cream }}
             >
               Results Portal
             </Link>
