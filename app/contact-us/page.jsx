@@ -49,8 +49,8 @@ const Navbar = ({ activePage, setActivePage }) => {
     }, []);
 
     const navLinks = [
-        { name: "Home", id: "home" },
-        { name: "Admissions", id: "admissions" },
+        { name: "Home", href: "/" },
+        { name: "Admissions", href: "/admissions" },
         { name: "Academics", id: "academics" },
         { name: "Contact", id: "contact" },
     ];
@@ -80,7 +80,7 @@ const Navbar = ({ activePage, setActivePage }) => {
                         </button>
                     ))}
                     <button 
-                        onClick={() => setActivePage('admissions')}
+                        onClick={() => setActivePage('/app/admissions')}
                         className="bg-[#1A2F4B] text-white px-7 py-3 rounded-full text-sm font-bold hover:bg-[#F5B920] hover:text-[#1A2F4B] transition-all shadow-lg"
                     >
                         ENROLL NOW
@@ -328,7 +328,7 @@ export default function App() {
 
             {/* Sticky WhatsApp - Cleaned up */}
             <motion.a
-                href="https://wa.me/265996415590"
+                href="https://wa.me/265984846964"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, x: 20 }}
